@@ -12,10 +12,11 @@ header h1 {
 }
 
 nav .nav-link {
-    margin: 0 20px; /* Increased margin for better spacing */
+    margin: 0 30px; /* Increased margin for better spacing */
     font-size: 1.1rem;
     display: flex; /* Use flexbox for alignment */
     align-items: center; /* Center align items vertically */
+    padding: 10px 0; /* Add vertical padding */
 }
 
 .profile-photo {
@@ -175,7 +176,8 @@ footer {
 
 @media (min-width: 769px) { /* For desktop view */
     nav .nav-link {
-        padding: 10px; /* Add padding for more spacing */
+        padding: 10px 0; /* Add vertical padding */
+        margin: 0 40px; /* Increased margin for better spacing */
     }
 
     .mode-toggle {
