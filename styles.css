@@ -90,11 +90,6 @@ footer {
     color: #bbb;
 }
 
-.dark-mode .btn-primary {
-    background-color: #bb86fc;
-    border-color: #bb86fc;
-}
-
 /* Progress Bar Customization */
 .progress {
     height: 20px;
