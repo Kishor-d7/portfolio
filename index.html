@@ -20,7 +20,7 @@
     </div>
 
     <header class="bg-primary text-white text-center py-4">
-        <h1>Kishor.D</h1>
+        <h1>Kishor.D</h1> <!-- Keep your name here -->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -153,15 +153,13 @@
             <h2 class="text-center mb-4">Projects</h2>
             <div class="project mb-4">
                 <h3>Number Classifier</h3>
-                <p>Developed a model to classify handwritten digits using machine learning techniques. This project enhanced my understanding of image processing and model evaluation.</p>
+                <p>Developed a model using TensorFlow to classify handwritten digits from the MNIST dataset.</p>
+                <a href="#" class="btn btn-primary">View Project</a>
             </div>
             <div class="project mb-4">
-                <h3>Weather and Climate Forecasting</h3>
-                <p>Created a responsive web application that provides weather forecasts and climate information by utilizing APIs to fetch real-time data. This project helped me enhance my skills in React.js and working with APIs.</p>
-            </div>
-            <div class="project mb-4">
-                <h3>To-Do List Application</h3>
-                <p>Built a simple yet effective to-do list application using HTML, CSS, and flask. This project improved my front-end development skills and understanding of backend and database.</p>
+                <h3>Web Scraper</h3>
+                <p>Created a Python web scraper to extract data from multiple websites and store it in a structured format.</p>
+                <a href="#" class="btn btn-primary">View Project</a>
             </div>
         </div>
     </section>
@@ -171,82 +169,41 @@
             <h2 class="text-center mb-4">Contact Me</h2>
             <form>
                 <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Your email" required>
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Kishor Dhaneshkumar. All Rights Reserved.</p>
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Kishor.D. All Rights Reserved.</p>
     </footer>
 
-    <!-- Bootstrap and jQuery JS -->
+    <!-- Bootstrap JS, Popper.js, jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-    <!-- Custom Script -->
+    <!-- Custom JavaScript for Theme Toggle -->
     <script>
         const toggleTheme = document.getElementById("toggleTheme");
         toggleTheme.addEventListener("click", function() {
             document.body.classList.toggle("dark-mode");
-            // Update button icon based on current theme
             if (document.body.classList.contains("dark-mode")) {
                 toggleTheme.innerHTML = '<i class="fas fa-sun"></i>';
             } else {
                 toggleTheme.innerHTML = '<i class="fas fa-moon"></i>';
             }
         });
-    </script>
-    
-    <!-- Code injected by live-server -->
-    <script>
-    	// <![CDATA[  <-- For SVG support
-    	if ('WebSocket' in window) {
-    		(function () {
-    			function refreshCSS() {
-    				var sheets = [].slice.call(document.getElementsByTagName("link"));
-    				var head = document.getElementsByTagName("head")[0];
-    				for (var i = 0; i < sheets.length; ++i) {
-    					var elem = sheets[i];
-    					var parent = elem.parentElement || head;
-    					parent.removeChild(elem);
-    					var rel = elem.rel;
-    					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-    						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-    						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-    					}
-    					parent.appendChild(elem);
-    				}
-    			}
-    			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-    			var address = protocol + window.location.host + window.location.pathname + '/ws';
-    			var socket = new WebSocket(address);
-    			socket.onmessage = function (msg) {
-    				if (msg.data == 'reload') window.location.reload();
-    				else if (msg.data == 'refreshcss') refreshCSS();
-    			};
-    			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-    				console.log('Live reload enabled.');
-    				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-    			}
-    		})();
-    	}
-    	else {
-    		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-    	}
-    	// ]]>
     </script>
 </body>
 </html>
