@@ -6,21 +6,16 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-header {
-    display: flex;
-    justify-content: space-between; /* Space between elements */
-    align-items: center; /* Center vertically */
-    padding: 10px; /* Add some padding */
-}
-
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
 
 nav .nav-link {
-    margin: 0 15px;
+    margin: 0 20px; /* Increased margin for better spacing */
     font-size: 1.1rem;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center align items vertically */
 }
 
 .profile-photo {
@@ -33,7 +28,6 @@ nav .nav-link {
     top: 20px;
     right: 20px;
     z-index: 1000;
-    margin-left: auto; /* Push the toggle to the right */
 }
 
 .section-title {
@@ -96,11 +90,6 @@ footer {
 
 .dark-mode .form-control::placeholder {
     color: #bbb;
-}
-
-.dark-mode .btn-primary {
-    background-color: #bb86fc;
-    border-color: #bb86fc;
 }
 
 /* Progress Bar Customization */
@@ -169,11 +158,6 @@ footer {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align items to the start */
-    }
-
     .navbar .nav-link {
         margin: 10px 0;
     }
@@ -186,5 +170,16 @@ footer {
     .github-link {
         display: inline-block;
         margin-top: 15px;
+    }
+}
+
+@media (min-width: 769px) { /* For desktop view */
+    nav .nav-link {
+        padding: 10px; /* Add padding for more spacing */
+    }
+
+    .mode-toggle {
+        top: 15px; /* Adjusted position */
+        right: 15px; /* Adjusted position */
     }
 }
